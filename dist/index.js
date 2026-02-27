@@ -27,7 +27,7 @@
  * @module footprint-metric-adapters
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ConsoleMetricAdapter = exports.MockMetricAdapter = exports.TreeNavigator = exports.ExecutionTree = exports.MetricCollector = exports.percentile = exports.computeStageErrors = exports.computeStagePercentiles = exports.computePercentiles = exports.SlidingWindowStrategy = exports.TumblingWindowStrategy = exports.RingBufferStrategy = exports.getMetricAdapterCapabilities = exports.createMetricSubflow = exports.METRIC_PATHS = void 0;
+exports.MockDatadogAdapter = exports.MockPrometheusAdapter = exports.MockCloudWatchAdapter = exports.ConsoleMetricAdapter = exports.MockMetricAdapter = exports.TreeNavigator = exports.ExecutionTree = exports.MetricCollector = exports.percentile = exports.computeStageErrors = exports.computeStagePercentiles = exports.computePercentiles = exports.SlidingWindowStrategy = exports.TumblingWindowStrategy = exports.RingBufferStrategy = exports.getMetricAdapterCapabilities = exports.createMetricSubflow = exports.METRIC_PATHS = void 0;
 var core_1 = require("./core");
 Object.defineProperty(exports, "METRIC_PATHS", { enumerable: true, get: function () { return core_1.METRIC_PATHS; } });
 Object.defineProperty(exports, "createMetricSubflow", { enumerable: true, get: function () { return core_1.createMetricSubflow; } });
@@ -65,3 +65,9 @@ var mock_1 = require("./adapters/mock");
 Object.defineProperty(exports, "MockMetricAdapter", { enumerable: true, get: function () { return mock_1.MockMetricAdapter; } });
 var console_1 = require("./adapters/console");
 Object.defineProperty(exports, "ConsoleMetricAdapter", { enumerable: true, get: function () { return console_1.ConsoleMetricAdapter; } });
+var cloudwatch_1 = require("./adapters/cloudwatch");
+Object.defineProperty(exports, "MockCloudWatchAdapter", { enumerable: true, get: function () { return cloudwatch_1.MockCloudWatchAdapter; } });
+var prometheus_1 = require("./adapters/prometheus");
+Object.defineProperty(exports, "MockPrometheusAdapter", { enumerable: true, get: function () { return prometheus_1.MockPrometheusAdapter; } });
+var datadog_1 = require("./adapters/datadog");
+Object.defineProperty(exports, "MockDatadogAdapter", { enumerable: true, get: function () { return datadog_1.MockDatadogAdapter; } });

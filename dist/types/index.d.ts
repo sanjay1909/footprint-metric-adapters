@@ -38,3 +38,6 @@ export { TreeNavigator } from './tree';
 export type { TreeNode, TreeNodeType, TreeNodeSummary, TreeSummary, DrillDownResult, DataOperation, StageMetricsSummary, ErrorDetail, NavigationResult, } from './tree';
 export { MockMetricAdapter, type MockMetricAdapterOptions, type MockMetricAdapterResult, } from './adapters/mock';
 export { ConsoleMetricAdapter, type ConsoleMetricAdapterOptions, type ConsoleMetricAdapterResult, } from './adapters/console';
+export { MockCloudWatchAdapter, type MockCloudWatchAdapterOptions, type MockCloudWatchAdapterResult, type CloudWatchMetricDatum, type CloudWatchExportData, } from './adapters/cloudwatch';
+export { MockPrometheusAdapter, type MockPrometheusAdapterOptions, type MockPrometheusAdapterResult, type PrometheusExportData, type PrometheusMetricLine, } from './adapters/prometheus';
+export { MockDatadogAdapter, type MockDatadogAdapterOptions, type MockDatadogAdapterResult, type DatadogExportData, type DatadogSeriesPoint, } from './adapters/datadog';
